@@ -1,0 +1,26 @@
+.footer-content {
+    top: 10%;
+}
+
+.h-100 {
+    min-height: 500px;
+}
+
+$yellow: #FFCA2C;
+
+footer {
+    color: #004B2C;
+
+    .fs-4 {
+        color: orangered;
+    }
+
+    li {
+        line-height: 35px;
+        cursor: pointer;
+        &:hover {
+            transition: 0.5s;
+            color: orangered;
+        }
+    }
+}

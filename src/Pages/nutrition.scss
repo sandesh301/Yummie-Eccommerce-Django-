@@ -1,0 +1,44 @@
+.title{
+    font-size: 50px;
+    font-weight: 600;
+}
+.title1{
+    font-size: 40px;
+}
+
+.list-group-numbered{
+    li{
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+.nav-pills-nutrition{
+    margin-top: 5%;
+    margin-left: 35%;
+    .nav-item{
+        border: 1px solid green;
+        padding: 0;
+        button{
+            border-radius:0;
+        }
+    }
+    .nav-link{
+        color: green;
+    }
+    .active{
+        background: green !important;
+    }
+}
+
+.half-img-cont{
+    top:0; right: 50px;
+    background: #fff;
+    width: 50%;
+    padding: 25px 15px;
+}
+.nutrition-meals{
+    line-height: 0px;
+}
+.ss-content{
+    font-size: 12px;
+}

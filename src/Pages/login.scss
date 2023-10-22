@@ -1,0 +1,20 @@
+.login {
+    background-image: url("https://www.nurturelife.com/wp-content/themes/nurturelife/assets//images/login-image.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .login-form {
+        padding: 20px;
+        width: 400px;
+        background: white;
+        left: 35%;
+        top: 10rem;
+        border-radius: 20px;
+
+        h3 {
+            font-weight: semibold;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<svg id="parachute-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" viewBox="0 0 1090 1090" enable-background="new 0 0 1089.4 1089.9" xml:space="preserve">
+    <path id="parachute-path" fill="none" stroke="#34d793" opacity="0.25" stroke-dasharray="10" stroke-miterlimit="10"
+        d="M 830.2 0.4 c 67.4 46.3 110 76 204 54 c 20.5 -4.8 50.6 -12.7 54 -9 c 10 10.9 -98.5 141.1 -216 225 c -91 65 -409.2 299.6 -700 282 c -99 -6 -180.4 -35.6 -171 8 c 8 37 378 372 872 529" />
+</svg>

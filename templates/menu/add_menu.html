@@ -1,0 +1,44 @@
+<h2 style="text-align: center;">Add Food</h2>
+<form class="add-food-form" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Add</button>
+</form>
+
+<style>
+  /* CSS styles */
+  .add-food-form {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .add-food-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .add-food-form input[type="text"],
+  .add-food-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .add-food-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .add-food-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>

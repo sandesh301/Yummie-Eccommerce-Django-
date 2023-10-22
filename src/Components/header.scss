@@ -1,0 +1,48 @@
+$brand: #009259;
+
+nav {
+    position: relative;
+
+    a {
+        color: #009259 !important;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+    }
+
+    .main-logo {
+        height: 3rem;
+
+    }
+
+    .navbar-nav {
+
+        .nav-item:hover {
+            overflow: hidden;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 50px;
+                height: 2px;
+                background: #009259;
+                bottom: 20px;
+                animation: menuline 0.8s;
+                transform-origin: top left;
+
+
+                @keyframes menuline {
+                    0% {
+                        transform: scaleX(0);
+                    }
+
+                    100% {
+                        transform: scaleX(-20px);
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}

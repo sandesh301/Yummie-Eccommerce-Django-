@@ -1,0 +1,83 @@
+
+<div class="food-detail">
+  {% if user.is_staff or user.is_superuser %}
+    <div class="buttons">
+      <a href="{% url 'edit-food' food.id %}">Edit</a>
+      <a href="{% url 'delete-food' food.id %}">Delete</a>
+    </div>
+  {% endif %}
+
+  <h1>{{ food.name }}</h1>
+  <p>Category: {{ food.category }}</p>
+  <p>Description: {{ food.description }}</p>
+  <p>Nutrition facts ingredients:{{ food.nutrition_facts_ingredients }}</p>
+  <p>Heating instruction:{{ food.heating_instruction }}</p>
+  <img src="{{ food.food_image }}" alt="{{ food.name }} image" />
+
+  <div class="back-button">
+    <a href="{% url 'food-list' category=food.category.category %}">Back</a>
+  </div>
+</div>
+
+<style>
+
+  .food-detail {
+    margin-bottom: 20px;
+  }
+
+  .food-detail h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .food-detail p {
+    margin-bottom: 5px;
+  }
+
+  .food-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .buttons a:hover {
+    background-color: #999;
+  }
+
+  .back-button {
+    margin-top: 20px;
+  }
+
+  .back-button a {
+    display: inline-block;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .back-button a:hover {
+    background-color: #999;
+  }
+</style>
+
+
